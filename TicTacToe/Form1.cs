@@ -514,13 +514,11 @@ namespace TicTacToe
         public void player1Wins (int[] winningSpaces)
         {
             Console.WriteLine("Player 1 Wins! Winning spaces were... " + winningSpaces[0] + " " +  winningSpaces[1] + " " + winningSpaces[2]);
-            Console.WriteLine("This is a commitment test to the GitRepo");
         }
 
         public void player2Wins (int[] winningSpaces)
         {
             Console.WriteLine("Player 2 Wins! Winning spaces were... " + winningSpaces[0] + " " + winningSpaces[1] + " " + winningSpaces[2]);
-            Console.WriteLine("This is a commitment test to the GitRepo");
         }
 
         public bool spaceEmpty(int spaceRequested)
