@@ -21,12 +21,18 @@ namespace TicTacToe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(1))
+
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(1))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the bottom left");
+                    button1.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 1);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -35,6 +41,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the bottom left");
+                    button1.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 1);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -45,12 +52,17 @@ namespace TicTacToe
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(2))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(2))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the bottom");
+                    button2.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 2);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -59,6 +71,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the bottom");
+                    button2.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 2);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -68,12 +81,17 @@ namespace TicTacToe
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(3))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(3))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the bottom right");
+                    button3.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 3);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -82,6 +100,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the bottom right");
+                    button3.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 3);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -91,12 +110,17 @@ namespace TicTacToe
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(4))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(4))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the middle left");
+                    button4.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 4);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -105,6 +129,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the middle left");
+                    button4.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 4);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -114,12 +139,17 @@ namespace TicTacToe
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(5))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(5))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the center");
+                    button5.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 5);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -128,6 +158,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the center");
+                    button5.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 5);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -137,12 +168,17 @@ namespace TicTacToe
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(6))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(6))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the middle right");
+                    button6.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 6);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -151,6 +187,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the middle right");
+                    button6.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 6);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -160,12 +197,17 @@ namespace TicTacToe
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(7))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(7))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the upper left");
+                    button7.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 7);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -174,6 +216,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the upper left");
+                    button7.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 7);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -183,12 +226,17 @@ namespace TicTacToe
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(8))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(8))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the upper middle");
+                    button8.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 8);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -197,6 +245,7 @@ namespace TicTacToe
                 {
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the upper middle");
+                    button8.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.takeSpace(2, 8);
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
@@ -206,12 +255,17 @@ namespace TicTacToe
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (game.spaceEmpty(9))
+            if (game.gameOver)
+            {
+                Console.WriteLine("Game is over");
+            }
+            else if (game.spaceEmpty(9))
             {
                 if (game.player1Turn)
                 {
                     // Place an X
                     Console.WriteLine("Player 1 placed an X in the upper right");
+                    button9.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\x-symbol.jpg");
                     game.takeSpace(1, 9);
                     game.checkPlayer1Win();
                     game.player1Turn = false; // It is now Player 2's turn
@@ -221,6 +275,7 @@ namespace TicTacToe
                     // Place an O
                     Console.WriteLine("Player 2 placed an O in the upper right");
                     game.takeSpace(2, 9);
+                    button9.Image = Image.FromFile(@"C:\Users\Dante Sivo\source\repos\TicTacToe\TicTacToe\o-symbol.png");
                     game.checkPlayer2Win();
                     game.player1Turn = true; // It is now Player 1's turn
                 }
@@ -514,11 +569,13 @@ namespace TicTacToe
         public void player1Wins (int[] winningSpaces)
         {
             Console.WriteLine("Player 1 Wins! Winning spaces were... " + winningSpaces[0] + " " +  winningSpaces[1] + " " + winningSpaces[2]);
+            gameOver = true;
         }
 
         public void player2Wins (int[] winningSpaces)
         {
             Console.WriteLine("Player 2 Wins! Winning spaces were... " + winningSpaces[0] + " " + winningSpaces[1] + " " + winningSpaces[2]);
+            gameOver = true;
         }
 
         public bool spaceEmpty(int spaceRequested)
